@@ -1,0 +1,37 @@
+<!-- Author: Lucas Almeida
+Used to display default page for the translator -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Translator</title>
+</head>
+<body>
+    <div id="header">
+        Translator
+    </div>
+    <div id="content">
+        <div id="original">
+            <select onchange="updateLanguageVars();displayText()" id="languageOriginal">
+                <option value="e">English</option>
+                <option value="s">Spanish</option>
+                <option value="g">German</option>
+            </select>
+            <textarea oninput="displayText()" id="firstBox"></textarea>
+        </div>
+        <div id="translation">
+            <select onchange="updateLanguageVars();displayText()" id="languageTranslation">
+                <option value="e">English</option>
+                <option value="s">Spanish</option>
+                <option value="g">German</option>
+            </select>
+            <textarea id="secondBox"></textarea>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

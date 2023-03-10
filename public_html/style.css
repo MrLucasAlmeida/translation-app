@@ -1,0 +1,65 @@
+/* Author: Lucas Almeida
+css styling for index.html */
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Trebuchet MS', 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+    }
+
+#header {
+    display: flex;
+    flex: 1;
+    background-color: lightblue;
+    justify-content: center;
+    align-items: center;
+    font-size: max(3em, 10vw);
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+}
+#content {
+    display: flex;
+    flex: 3;
+    border: 2px solid black;
+    
+}
+
+#original {
+    flex: 1;
+    background-color: lightcoral;
+    height: 100%;
+    border: 2px solid black;
+}
+#translation {
+    flex: 1;
+    background-color: lightgreen;
+    height: 100%;
+    border: 2px solid black;
+}
+
+
+/* selects styling  */
+select {
+    width: 70%;
+    height: auto;
+    margin: 20px auto;
+    font-size: max(1.5em, 3vw);
+    text-align: center;
+}
+/* textarea styling */
+textarea {
+    width: 70%;
+    height: 70%;
+    margin: 10px auto;
+    font-weight: 500;
+    font-size: 5em;
+    text-align: left;
+    resize: none;
+
+}
